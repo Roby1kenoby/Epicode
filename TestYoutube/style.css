@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+/*      ----------CONFIGURAZIONE SIDEBAR----------          */
+
+div.sidebar-icon:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+/*tutti i p che stanno sotto ad un div di classe sidebar-icon*/
+div.sidebar-icon p {
+    margin: 0;
+}
+
+.sidebar-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+}
+
+/*tuti gli oggetti di classe ion-icon all'interno di oggetti che hanno la classe sidebar-icon*/
+.sidebar-icon ion-icon {
+    font-size: 1.5em;
+  }
+
+/*l'oggetto sidebar*/
+#sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 10vw
+}
+
+/*          ----------CONFIGURAZIONE TOPBAR----------       */
+
+input {
+    width:40%
+}
+
+.top-logo {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 80%;
+}
+
+.top-icons {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+#topbar ion-icon{
+    font-size: 2.2em;
+    padding: 0 0.25em;
+    cursor: pointer;
+}
+
+#topbar {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 2em;
+}
+
+/*          ----------CONFIGURAZIONE CONTENT ----------       */
+
+/*l'oggetto main page*/
+
+.video-wrapper {
+    width: 33%;
+}
+
+.details-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+div.author-logo {
+    display: flex;
+    align-items: center;
+}
+
+.author-logo img{
+    width:3em;
+    padding-right: 10px;
+}
+
+#main-page {
+    width: 100%;
+}
+
+/*l'oggetto content*/
+#content {
+    display: flex;
+    margin: 0;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
