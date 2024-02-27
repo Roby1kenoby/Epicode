@@ -6,6 +6,7 @@ header{
 
 .subheader{
     background-color: rgb(236, 218, 171);
+    border-top: 1px;
 }
 
 main{
