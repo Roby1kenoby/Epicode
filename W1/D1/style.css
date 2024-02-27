@@ -1,0 +1,14 @@
+header{
+    margin: 0%;
+    background-color: red;
+    text-align: center;
+}
+
+.subheader{
+    background-color: rgb(236, 218, 171);
+}
+
+main{
+    width: 50%;
+    margin: 0 auto;
+}
