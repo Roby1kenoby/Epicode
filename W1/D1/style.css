@@ -1,3 +1,4 @@
+/* Imported fancyer font */
 @import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap');
 
 .annapurna-sil-regular {
@@ -6,27 +7,30 @@
     font-style: normal;
   }
   
-  .annapurna-sil-bold {
+.annapurna-sil-bold {
     font-family: "Annapurna SIL", serif;
     font-weight: 700;
     font-style: normal;
   }
   
-  
+/* applied font to all the body element  */
 body {
     font-family: annapurna;
 }
 
+/* removed header margin and centered it's content */
 header{
     margin: 0;
     text-align: center;
 }
 
+/* reduced img size and added margin to add space between this and subheader */
 header img{
     width: 150px;
     margin: 1em;
 }
 
+/* changed background color and added the top border */
 .subheader{
     background-color: rgb(253, 247, 233);
     border-top: solid;
@@ -34,29 +38,33 @@ header img{
     padding: 1em;
 }
 
+/* set size for the main content and added margins to center the content */
 main{
     width: 40%;
     margin: 0 auto;
 }
 
+/* aligned main title */
 h1{
     text-align: center;
 }
 
+/* cropped image, fitted as cover and added border and shadow */
 main img{
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 1em;
     box-shadow: 4px 6px 3px rgb(147, 146, 146);
-    
 }
 
+/* styled image caption */
 .image-caption{
     text-align: center;
     color: grey;
 }
 
+/* styled border of the featured section */
 .featured {
     border-left: solid;
     border-left-color: rgb(255 230 200);
@@ -64,6 +72,7 @@ main img{
     margin-bottom: 3em;
 }
 
+/* styled elements inside featured section */
 .featured p{
     margin: 0;
     color: chocolate;
@@ -73,6 +82,7 @@ main img{
     color: cadetblue;
 }
 
+/* styled h2 titles with bottom border */
 .recipe h2{
     border-bottom: solid 0.5px;
     border-bottom-color: rgb(149, 220, 222);
@@ -80,6 +90,7 @@ main img{
     margin-top: 0;
 }
 
+/* styled footer */
 footer {
     width: 40%;
     margin: 0 auto;
