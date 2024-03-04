@@ -1,0 +1,98 @@
+/* Styling for the upper banner + nav bar */
+
+.logo{
+    background-color: rgb(41, 54, 71);
+}
+
+.navbar{
+    background-color: rgb(78, 98, 124);
+}
+
+header img{
+    margin: 0.5% 2% 0.5%;
+    width: 7%;
+}
+
+nav{
+    margin-left: 2%;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    margin-right: 1.5em;
+}
+
+/* Styling for the main content */
+/* General Styling */
+main{
+    background-color: rgb(227, 230, 230);
+}
+
+.titlePlusLink{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+.titlePlusLink p{
+    margin: 0;
+    display: inline-block;
+    margin-right: 2em;
+    
+}
+
+/* Holiday Section */
+/* General */
+section{
+    padding: 2%;
+}
+
+/* Specific */
+.banner{
+    background-color: rgb(255, 111, 0);
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.giftGuides{
+    /* background image styling */
+    background-image: url(assets/bg-image.png);
+    background-repeat: repeat;
+    background-size: auto;
+    /* test styling */
+    text-align: center;
+    color: white;
+    /* container spacing */
+    padding: 2em;
+    margin-top: 2em;
+}
+
+/* Carousel section */
+/* General */
+.carousel {
+    padding-top: 0;
+}
+
+/* Specific */
+.carousel *{
+    background-color: white;
+    
+}
+
+.product {
+    padding-left: 0;
+    display: inline-block;
+    width: 25%;
+}
+
+.product img{
+    width: 100%;
+}
