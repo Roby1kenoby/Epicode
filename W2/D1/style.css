@@ -1,0 +1,76 @@
+
+
+.card{
+    
+    width: 300px;
+    height: 500px;
+    /* position relative to father */
+    position: relative;
+    /* 50% of viewport height\width from top and from left */
+    top: 50vh;
+    left: 50vw;
+    /* translation to center the image on it's center */
+    transform: translate(-50%, -50%);
+    /* rounded borders */
+    border-radius: 1em;
+    /* overflow hidden to hide buttons */
+    /* overflow: hidden; */
+}
+
+/* .card:hover img{
+    filter: brightness(0.5);
+} */
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.saveButton{
+    border-radius: 2em;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    /* initial position */
+    top: -30px;
+    right: 30px;
+    opacity: 0;
+    transition: all 300ms linear;
+    z-index: 1;
+}
+
+.card:hover .saveButton{
+    opacity: 1;
+    top: 30px;
+}
+
+.lowLevelButton{
+    width: 100%;
+    text-align: center;
+}
+
+.lowLevelButton button{
+    background-color: white;
+    border-radius: 2em;
+    padding: 4px 6px;
+}
+
+
+#link{
+    display: inline-block;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#upload{
+    display: inline-block;
+    width: 10%;
+}
+#other{
+    display: inline-block;
+    width: 10%;
+}
+
