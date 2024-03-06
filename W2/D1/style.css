@@ -1,7 +1,4 @@
-
-
 .card{
-    
     width: 300px;
     height: 500px;
     /* position relative to father */
@@ -13,11 +10,9 @@
     transform: translate(-50%, -50%);
     /* rounded borders */
     border-radius: 1em;
-    /* overflow hidden to hide buttons */
-    /* overflow: hidden; */
 }
 
-/* .card:hover img{
+/* .card:hover {
     filter: brightness(0.5);
 } */
 
@@ -28,6 +23,7 @@
 }
 
 .saveButton{
+    /* border style */
     border-radius: 2em;
     text-align: center;
     padding: 10px 15px;
@@ -39,10 +35,12 @@
     right: 30px;
     opacity: 0;
     transition: all 300ms linear;
-    z-index: 1;
+    /* to let the savebutton stay over every other div */
+    /* z-index: 1; */
 }
 
 .card:hover .saveButton{
+    /* on card hover, the save button materialize and descend on the card via transition*/
     opacity: 1;
     top: 30px;
 }
@@ -50,27 +48,51 @@
 .lowLevelButton{
     width: 100%;
     text-align: center;
+    position: absolute;
+    /* transition initial parameter for the 3 low level buttons */
+    bottom: 60px;
+    opacity: 0;
+    transition: all 300ms linear;
 }
+    /* final position of low level buttons */
+.card:hover .lowLevelButton{
+    opacity: 1;
+    bottom: 110px;
+}
+
 
 .lowLevelButton button{
     background-color: white;
     border-radius: 2em;
-    padding: 4px 6px;
+    padding: 4px 6px;  
+    border: none;
 }
-
 
 #link{
     display: inline-block;
     width: 50%;
+}
+
+#link i{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0.5em;
+    transform: rotate(-45deg);
+}
+
+#link span{
+    display: inline-block;
+    vertical-align: middle;
+    /* ellipsis if text is too long */
     text-overflow: ellipsis;
     overflow: hidden;
+    width: 70%;
 }
+
 #upload{
-    display: inline-block;
     width: 10%;
 }
 #other{
-    display: inline-block;
     width: 10%;
 }
 
