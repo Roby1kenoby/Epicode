@@ -12,7 +12,13 @@
     border-radius: 1em;
 }
 
+/* provare ad usare un elemento before e applicare su quello il filter */
 /* .card:hover {
+    filter: brightness(0.5);
+} */
+
+/* .card::before:hover{
+    content: '';
     filter: brightness(0.5);
 } */
 
