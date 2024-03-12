@@ -7,6 +7,7 @@
     <title>Medium</title>
 </head>
 <body>
+    <!-- -------------------- HEADER -------------------- -->
     <header>
         <img src="assets/images/medium_logo.png" alt="Medium Logo">
         <nav id="social">
@@ -17,14 +18,25 @@
             <div class="roundButton"><a href="#"><i class="fa-solid fa-r" style="color: #ffffff;"></i></a></div>
         </nav>
     </header>
+    <!-- -------------------- MAIN SECTION -------------------- -->
     <main>
+        <!-- -------------------- RECOMENDED FOR YOU\FOLLOWING SECTION -------------------- -->
+        
         <nav id="recomendations">
             <a href="#">FOLLOWING</a>
             <a href="#">RECOMENDED FOR YOU</a>
         </nav>
+
+        <!-- -------------------- ARTICLES SECTION -------------------- -->
+
         <section id="articles">
+            
+            <!-- -------------------- SINGLE ARTICLE -------------------- -->
+            
             <article>
+                <!-- -------------------- CONTENT SEPARATED FROM THE IMAGE -------------------- -->
                 <div class="content">
+                    <!-- -------------------- AUTHOR INFO -------------------- -->
                     <div class="author">
                         <img src="https://picsum.photos/20/20" alt="">
                         <p>
@@ -33,25 +45,33 @@
                             <a href="#" class="authorSite">Audacity</a>
                         </p>
                     </div>
+                    <!-- -------------------- ARTICLE TITLE AND SUMMARY -------------------- -->
                     <div class="titleAndsummary">
                         <h2>React state management in 2022 - Return of the Redux</h2>
                         <h3 class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae culpa quibusdam illum omnis aliquam. Rem recusandae tempora sit ratione aliquid aut nesciunt sapiente veritatis, accusantium, architecto nihil vel aspernatur. Molestias.</h3>
                     </div>
+                    <!-- -------------------- WRAPPER FOR TAGS, INFOS AND ICONS -------------------- -->
                     <div class="tagsAndInfosWrapper">
+                        <!-- -------------------- TAGS AND INFOS -------------------- -->
                         <div class="tagsAndInfos">
                             <span>Dec 3</span><span class="spacer">·</span>
                             <span>4 min read</span><span class="spacer">·</span> 
                             <div class="articleTag"><a href="#">React</a></div><span class="spacer">·</span> 
                             <span>Popular on Medium</span>
                         </div>
+                        <!-- -------------------- BOOOKMARK AND MORE ICONS -------------------- -->
                         <div class="moreIcons">
                             <i class="fa-regular fa-bookmark"></i>
                             <i class="fa-solid fa-ellipsis"></i>                        
                         </div>
                     </div>
                 </div>
+                <!-- -------------------- ARTICLE IMAGE -------------------- -->
                 <img src="https://picsum.photos/200/134" alt="image">
             </article>
+
+            <!-- -------------------- END OF SINGLE ARTICLE -------------------- -->
+
             <article>
                 <div class="content">
                     <div class="author">
@@ -195,7 +215,13 @@
             </article>
         </section>
     </main>
+
+    <!-- -------------------- ASIDE SECTION -------------------- -->
+    
     <aside id="side">
+
+        <!-- -------------------- TWITTER SECTION -------------------- -->
+
         <section id="twitter">
             <div id="connectLogos">
                 <i class="fa-brands fa-medium"></i> + <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
@@ -206,6 +232,9 @@
             </div>
             <a href="#">Maybe Later</a>
         </section>
+
+        <!-- -------------------- RECOMENDED TOPICS SECTION -------------------- -->
+        
         <section id="recomendedTopics">
             <p class="sectionHeading">Recomended Topics</p>
             <div class="tags">
@@ -218,16 +247,27 @@
                 <div class="bigTag"><a href="#">Art</a></div>
             </div>
         </section>
+
+        <!-- -------------------- WHO TO FOLLOW SECTION -------------------- -->
+
         <section id="whoToFollow">
             <p class="sectionHeading">Who to follow</p>
+
+            <!-- -------------------- START OF A SINGLE FOLLOWABLE -------------------- -->
             <div class="followable">
+                <!-- -------------------- PROFILE PIC -------------------- -->
                 <img src="https://picsum.photos/40/40" alt="photo">
+
+                <!-- -------------------- PROFILE DATA -------------------- -->
                 <div class="followableInfo">
                     <p><a href="#">Lessig</a></p>
                     <p>law professor, activist.</p>
                 </div>
+                <!-- -------------------- FOLLOW BUTTON -------------------- -->
                 <div class="followButton"><a href="#">Follow</a></div>
             </div>
+            <!-- -------------------- END OF A SINGLE FOLLOWABLE -------------------- -->
+            
             <div class="followable">
                 <img src="https://picsum.photos/40/40" alt="photo">
                 <div class="followableInfo">
@@ -245,8 +285,12 @@
                 <div class="followButton"><a href="#">Follow</a></div>
             </div>
         </section>
+
+        <!-- -------------------- RECENTLY SAVED SECTION -------------------- -->
+        
         <section id="recentlySaved">
             <p class="sectionHeading">Recently Saved</p>
+            <!-- -------------------- REUSED CONTENT FROM ARTICLES -------------------- -->
             <div class="savedContentWrapper">
                 <div class="author">
                     <img src="https://picsum.photos/20/20" alt="">
@@ -287,6 +331,9 @@
                 <a href="#">See all (3)</a>
             </div>
         </section>
+
+        <!-- -------------------- BOTTOM NAVIGATION SECTION -------------------- -->
+
         <nav id="navigation">
             <ul>
                 <li><a href="#">Help</a></li>

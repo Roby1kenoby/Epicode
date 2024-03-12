@@ -1,6 +1,9 @@
+/* font and icons import */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+/* reset and font-family setting */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +28,7 @@
     font-style: normal;
 }
 
+/* removed underline from links */
 a{
     text-decoration: none;
     color: black;
@@ -40,6 +44,7 @@ body{
     align-items: stretch;
 }
 
+/* --------- HEADER --------- */
 header{
     /* background-color: white;
     border: 1px solid red; */
@@ -52,6 +57,7 @@ header{
     box-shadow: 1px 5px 10px 0px #d8d8d8;
 }
 
+/* CONTAINER FOR SOCIAL BUTTON AND LOGO ON TOP OF THE PAGE */
 #social{
     display: flex;
     justify-content: space-evenly;
@@ -62,6 +68,7 @@ header{
     margin: 0em 0.5em;
 }
 
+/* RESUME MEMBERSHIP BUTTON */
 .longButton{
     border: 1px solid grey;
     border-radius: 2em;
@@ -69,6 +76,7 @@ header{
     padding: 4px 8px;
 }
 
+/* LOGGED USER BUTTON */
 .roundButton{
     display: flex;
     align-items: center;
@@ -79,7 +87,7 @@ header{
     border-radius: 1.8em;
 }
 
-
+/* --------- MAIN CONTENT --------- */
 
 main{
     /* background-color: aquamarine; */
@@ -90,6 +98,8 @@ main{
     flex-direction: column;
     padding: 0em 4em;
 }
+
+/* --------- RECOMENDEDE FOR YOU\FOLLOWING BOX --------- */
 
 #recomendations{
     display: flex;
@@ -112,6 +122,8 @@ main{
     text-underline-offset: 0.2em;
 }
 
+/* --------- BOX WITH ARTICLES --------- */
+
 #articles{
     display: flex;
     padding: 2em 0em 0em;
@@ -125,21 +137,13 @@ article{
     display: flex;
 }
 
-.summary{
-    color: #6B6B6B;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    /* copied online to get second line ellipsis */
-    display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 2; 
-}
-
+/* WRAPPER FOR EVERYTHING IN THE ARTICLE BUT THE IMAGE */
 .content{
     width: 80%;
     padding-right: 1em;
 }
 
+/* WRAPPER FOR THE AUTHOR INFORMATION (NAME AND WEBSITE) */
 .author{
     padding-bottom: 0.4em;
     display: flex;
@@ -153,18 +157,32 @@ article{
     font-weight: bold;
 }
 
+/* DESCRIPTION OF THE ARTICLE (THE ONE IN GREY UNDER THE TITLE)*/
+.summary{
+    color: #6B6B6B;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    /* copied online to get second line ellipsis */
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+}
+
+/* WRAPPER FOR DATE OF THE ARTICLE, READING LENGTH, TAGS AND BOOKMARK\MORE ICONS ON THE FAR RIGHT */
 .tagsAndInfosWrapper{
     display: flex;
     padding-top: 0.4em;
     width: 100%;
 }
 
+/* WRAPPER FOR DATE, LENGTH AND TAG FOR THE ARTICLE */
 .tagsAndInfos{
     display: flex;
     align-items: baseline;
     flex-grow: 2;
 }
 
+/* DOT BETWEEN ELEMENTS */
 .spacer{
     padding: 0em 0.5em;
 }
@@ -175,10 +193,13 @@ article{
     padding: 2px 8px;
 }
 
+/* ICONS ON THE FAR RIGHT */
 .moreIcons i{
     padding-right: 0.5em;
     
 }
+
+/* --------- ASIDE --------- */
 
 aside{
     /* background-color: cadetblue; */
@@ -189,12 +210,22 @@ aside{
     padding: 2em;
 }
 
+/* --------- CSS FOR EVERY SECTION IN THE ASIDE --------- */
+
 aside section{
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     padding: 2em 0em 0em;
 }
+
+/* BOLD FONT FOR EVERY SECTION HEADING */
+.sectionHeading{
+    font-weight: bold;
+}
+
+
+/* --------- TWITTER SECTION --------- */
 
 #twitter{
     display: flex;
@@ -221,14 +252,12 @@ aside section{
     border-radius: 2em;
 }
 
+/* --------- RECOMENDED TOPICS SECTION --------- */
+
 #recomendedTopics{
     display: flex;
     flex-direction: column;
     row-gap: 1em;
-}
-
-.sectionHeading{
-    font-weight: bold;
 }
 
 .tags{
@@ -245,18 +274,21 @@ aside section{
     background-color: #F2F2F2;
 }
 
+/* --------- WHO TO FOLLOW SECTION --------- */
+
 #whoToFollow{
     display: flex;
     flex-direction: column;
     row-gap: 1em;
 }
 
-
+/* --------- MAIN WRAPPER --------- */
 .followable{
     display: flex;
     align-items: center;
 }
 
+/* --------- IMAGE --------- */
 .followable img{
     width: 40px;
     height: 40px;
@@ -265,6 +297,7 @@ aside section{
     border: 1px solid #F2F2F2
 }
 
+/* --------- NAME AND BIO --------- */
 .followableInfo{
     display: flex;
     flex-direction: column;
@@ -288,11 +321,15 @@ aside section{
     -webkit-line-clamp: 2; 
 }
 
+/* --------- FOLLOW BUTTON --------- */
 .followButton{
     border: 1px solid grey;
     padding: 4px 8px;
     border-radius: 1em;
 }
+
+/* --------- RECENTLY SAVED SECTION --------- */
+
 #recentlySaved{
     display: flex;
     flex-direction: column;
@@ -302,6 +339,8 @@ aside section{
 .otherSavedContent a{
     color: green;
 }
+
+/* --------- BOTTOM NAVIGATION SECTION --------- */
 
 #navigation{
     display: flex;
