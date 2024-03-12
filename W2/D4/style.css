@@ -68,12 +68,14 @@ main{
     border-right: 1px solid #d8d8d8;
     display: flex;
     flex-direction: column;
+    padding: 0em 4em;
 }
 
 #recomendations{
     display: flex;
     align-items: end;
-    padding: 5em 4em 0.5em 4em;
+    padding: 5em 0em 0em;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 #recomendations a{
@@ -87,12 +89,12 @@ main{
 
 #recomendations a:last-of-type{
     text-decoration: underline;
-    text-underline-offset: 0.5em;
+    text-underline-offset: 0.2em;
 }
 
 #articles{
     display: flex;
-    padding: 2em 4em 0.5em 4em;
+    padding: 2em 0em 0em;
     flex-direction: column;
     justify-content: space-evenly;
     row-gap: 3em;
@@ -164,22 +166,25 @@ aside{
     width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 2em;
 }
 
 aside section{
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
+    padding: 2em 0em 0em;
 }
 
 #twitter{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
     row-gap: 1em;
     border-bottom: 1px solid #d8d8d8;
     border-bottom-width: 80%;
+    padding-top: 0em;
+    padding-bottom: 2em;
 }
 
 #twitter p:first-of-type{
@@ -200,7 +205,6 @@ aside section{
     display: flex;
     flex-direction: column;
     row-gap: 1em;
-    padding: 2em;
 }
 
 .sectionHeading{
@@ -224,7 +228,6 @@ aside section{
 #whoToFollow{
     display: flex;
     flex-direction: column;
-    padding: 2em;
     row-gap: 1em;
 }
 
@@ -273,7 +276,6 @@ aside section{
 #recentlySaved{
     display: flex;
     flex-direction: column;
-    padding: 2em;
     row-gap: 1em;
 }
 
@@ -282,9 +284,9 @@ aside section{
 }
 
 #navigation{
-    padding: 2em;
     display: flex;
     row-gap: 0.5em;
+    padding-top: 2em;
 }
 
 #navigation ul{
